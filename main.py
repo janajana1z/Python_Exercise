@@ -1,8 +1,11 @@
-lt_num = [34,10,53,25,17,5]
-new_lt =[]
-def firstlast_num (lt_num, new_lt):
-      new_lt.append(lt_num[0])
-      new_lt.append(lt_num[-1])
-      print(new_lt)
+lt = sorted([50,13,15,27,92,50,35,7])
+num = int(input("enter a number to check it if exist "))
 
-firstlast_num(lt_num,new_lt)
+print(lt)
+def check(lt , num):
+   if num in lt:
+      print(True)
+   else:
+      print(False)
+
+check(lt , num)
